@@ -1,3 +1,7 @@
+-- Changing the default path can be done from registry or TSQL
+-- Run both default data and log together, sometimes the log can follow the data path
+-- Restart is required.
+
 EXEC xp_instance_regwrite
     N'HKEY_LOCAL_MACHINE',
     N'Software\Microsoft\MSSQLServer\MSSQLServer',
